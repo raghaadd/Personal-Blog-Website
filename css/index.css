@@ -1,102 +1,22 @@
+@import url('colors.css');
+@import url('main-content-index.css');
+@import url('header-content-index.css');
+@import url('footer-content-index.css');
 body{
     margin: 20px;
 }
 a{
-    color: blue;
+    color: var(--primary-color);
 }
 .container{
     display: grid;
     height: 100%;
-    grid-template-rows: 1fr 600px 1fr;
+    grid-template-rows: auto 1fr auto;
     grid-template-columns: auto 1fr auto;
     grid-template-areas:
     "side hd hd"
     "side main main"
     "side ft ft";
 }
-#subscribe {
-    color: #000;
-}
 
-.fa-search {
-    margin-right: 4.5%; 
-}
-.header{
-    display: flex;
-    grid-area: hd;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items: center; 
-    padding: 20px;
-}
-.main{
-    display: grid;
-    grid-area: main;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-    grid-gap: 15px;
-    padding: 20px;
-}
-.card{
-    display: grid;
-    width: 85%;
-    height: 70%;
-    grid-template-rows: 25px 1fr;
-    grid-template-areas:
-    "tp"
-    "main"
-    "continue";
-    border-style: groove;
-    border-width: 2px;
-    padding: 20px;
-}
-.type-left{
-    grid-area: tp;
-    Color:Blue;
-    font-weight: bold;
-    font-size: 15px;
-    margin: 2px 0;
-}
-.type-right{
-    grid-area: tp;
-    color: green;
-    font-weight: bold;
-    font-size: 15px;
-    margin: 2px 0;
-}
-.main-cont{
-    grid-area: main;
-}
-.continue-left{
-    grid-area: continue;
-}
-#card-title {
-    font-weight: bold;
-    font-size: 19px;
-    margin: 5px 0; 
-}
-#date {
-    margin: 5px 0; 
-    font-size: 12px;
-    font-weight: 600;
-    color: gray;
-}
 
-#paragraph {
-    margin: 5px 0; 
-}
-#continue{
-    color:rgb(74, 132, 248)
-}
-.footer{
-    display: flex;
-    flex-direction: column; 
-    grid-area: ft;
-    margin-right: 5%;
-    margin-left: 1%;
-    padding: 15px;
-    background-color: rgb(242, 242, 242);
-    justify-content: center;
-    align-items: center;
-}

@@ -1,0 +1,16 @@
+@import url('colors.css');
+#subscribe {
+    color: var(--subscribe-color);
+}
+
+.fa-search {
+    margin-right: 4.5%; 
+}
+.header{
+    display: flex;
+    grid-area: hd;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center; 
+    padding: 20px;
+}

@@ -1,0 +1,23 @@
+.images{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.img-style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.img-style img {
+    height: 250px;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 12px;
+    color: gray;
+}

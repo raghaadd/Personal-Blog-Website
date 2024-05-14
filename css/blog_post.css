@@ -1,6 +1,13 @@
+@import url('header-content-index.css');
+@import url('footer-content-index.css');
+@import url('side-content-blogpost.css');
+@import url('rounded-button-blogpost.css');
+@import url('images-blogpost.css');
+@import url('main-blogpost.css');
+
 body{
     margin: 20px;
-    font-size: 14px;
+    font-size: 18px;
 }
 a{
     color: blue;
@@ -8,89 +15,16 @@ a{
 .container{
     display: grid;
     height: 100%;
-    grid-template-rows: 1fr 1000px 1fr;
-    grid-template-columns: auto 1fr auto auto;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto 600px 400px auto;
     grid-template-areas:
     "side hd hd hd"
     "side main main sd"
     "side ft ft ft";
 }
-#subscribe {
-    color: #000;
-}
 
-.fa-search {
-    margin-right: 4.5%; 
-}
 
-.header{
-    display: flex;
-    grid-area: hd;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items: center; 
-    padding: 20px;
-}
-.main{
-    display: grid;
-    grid-area: main;
-    margin: 20px;
-}
-#title {
-    margin: 5px 0; 
-   
-}
-#date {
-    margin: 5px 0; 
-    font-size: 13px;
-    font-weight: 500;
-    color: rgb(179, 179, 179);
-}
-.separator {
-    border-width: 0.5px; 
-    border-color: rgb(248, 246, 246);
-}
-#p-with-border{
-    border: 1px rgb(172, 172, 172) solid;
-    padding: 5px;
-}
 
-.button-container {
-    display: flex;
-}
 
-.rounded-button {
-    border-radius: 30px; 
-    padding: 10px 15px;
-    margin-right: 10px; 
-    font-size: 14px;
-}
 
-.older-post {
-    background-color: white; 
-    color: blue; 
-    border: 1px blue solid;
-}
 
-.newer-post {
-    background-color: white; 
-    color: grey; 
-    border: 1px grey solid;;
-}
-.side{
-    display: grid;
-    grid-area: sd;
-    margin: 20px;
-}
-
-.footer{
-    display: flex;
-    flex-direction: column; 
-    grid-area: ft;
-    margin-right: 5%;
-    margin-left: 1%;
-    padding: 15px;
-    background-color: rgb(242, 242, 242);
-    justify-content: center;
-    align-items: center;
-}
