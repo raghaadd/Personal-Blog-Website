@@ -20,6 +20,7 @@
 #p-with-border{
     border: 1px rgb(172, 172, 172) solid;
     padding: 5px;
+    font-weight: bold;
 }
 #div-with-border{
     padding: 5px;
