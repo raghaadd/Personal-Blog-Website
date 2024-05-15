@@ -1,0 +1,139 @@
+@import url('colors.css');
+.main{
+    display: grid;
+    grid-area: main;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 15px;
+    padding: 20px;
+}
+.card{
+    display: grid;
+    width: 85%;
+    height: 75%;
+    grid-template-rows: 25px 1fr;
+    grid-template-areas:
+    "tp"
+    "main"
+    "continue";
+    border-style: groove;
+    border-width: 2px;
+    padding: 20px;
+}
+.type-left{
+    grid-area: tp;
+    Color:var(--blue-color);
+    margin: 2px 0;
+}
+.type-right{
+    grid-area: tp;
+    color: var(--accent-color);
+    margin: 2px 0;
+}
+.main-cont{
+    grid-area: main;
+}
+.continue-left{
+    grid-area: continue;
+}
+.image-paragraph{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    gap: 15px;
+}
+.image-paragraph img {
+    height: 100px; 
+    width: 120;
+}
+.img-section {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 5px; 
+}
+.img-button-left {
+    background-color: #007bff;
+    color: white; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 12px; 
+}
+
+.img-button-left:hover {
+    background-color: #024287; 
+}
+.img-button-right {
+    background-color: green;
+    color: white; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 12px; 
+}
+
+.img-button-right:hover {
+    background-color: rgb(2, 75, 2); 
+}
+#card-title {
+    margin: 5px 0; 
+}
+#date {
+    margin: 5px 0; 
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--secondary-color);;
+}
+#paragraph {
+    margin: 5px 0; 
+}
+#continue{
+    color:var(--primary-color);
+}
+ /* *Medium Screens* */
+ @media (min-width: 600px)and (max-width:900px) {
+    .image-paragraph img {
+        height: 110px; 
+    }
+    .img-button-left {
+        background-color: #007bff;
+        color: white; 
+        border: none;
+        border-radius: 5px; 
+        cursor: pointer; 
+        font-size: 14px; 
+    }
+    .img-button-right {
+        background-color: green;
+        color: white; 
+        border: none;
+        border-radius: 5px; 
+        cursor: pointer; 
+        font-size: 14px; 
+    }
+}
+
+ /* *Large Screens*  */
+@media (min-width:901px) {
+    .image-paragraph img {
+        height: 120px; 
+    }
+    .img-button-left {
+        background-color: #007bff;
+        color: white; 
+        border: none;
+        border-radius: 5px; 
+        cursor: pointer; 
+        font-size: 18px; 
+    }
+    .img-button-right {
+        background-color: green;
+        color: white; 
+        border: none;
+        border-radius: 5px; 
+        cursor: pointer; 
+        font-size: 18px; 
+    }
+}

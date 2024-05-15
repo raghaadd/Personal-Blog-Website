@@ -1,0 +1,42 @@
+@import url('colors.css');
+#subscribe {
+    color: var(--subscribe-color);
+}
+
+#subscribe:hover{
+    color: darkblue;
+}
+
+.fa-search {
+    margin-right: 4.5%;
+    font-size: 17px !important;
+}
+.header{
+    display: flex;
+    grid-area: hd;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center; 
+    padding: 20px;
+}
+.left-hd-section{
+    display: flex;
+    flex-direction:row;
+    gap: 5px;
+}
+
+ /* *Medium Screens* */
+ @media (min-width: 600px)and (max-width:900px) {
+    .fa-search {
+        margin-right: 4.5%;
+        font-size: 20px !important;
+    }
+}
+
+ /* *Large Screens*  */
+@media (min-width:901px) {
+    .fa-search {
+        margin-right: 4.5%;
+        font-size: 24px !important;
+    }
+}

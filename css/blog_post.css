@@ -1,13 +1,14 @@
-@import url('header-content-index.css');
-@import url('footer-content-index.css');
-@import url('side-content-blogpost.css');
-@import url('rounded-button-blogpost.css');
-@import url('images-blogpost.css');
-@import url('main-blogpost.css');
+@import url('colors.css');
+@import url('common-css/header-content-index.css');
+@import url('common-css/footer-content-index.css');
+@import url('sub-blogPage-css/side-content-blogpost.css');
+@import url('sub-blogPage-css/rounded-button-blogpost.css');
+@import url('sub-blogPage-css/images-blogpost.css');
+@import url('sub-blogPage-css/main-blogpost.css');
 
 body{
     margin: 20px;
-    font-size: 18px;
+    font-size: 14px;
 }
 a{
     color: blue;
@@ -16,15 +17,27 @@ a{
     display: grid;
     height: 100%;
     grid-template-rows: auto 1fr auto;
-    grid-template-columns: auto 600px 400px auto;
     grid-template-areas:
-    "side hd hd hd"
-    "side main main sd"
-    "side ft ft ft";
+    "hd hd hd "
+    "main main sd"
+    "ft ft ft";
 }
 
+ /* *Medium Screens* */
+ @media (min-width: 600px)and (max-width:900px) {
+    body{
+        margin: 20px;
+        font-size: 16px;
+    }
+}
 
-
+ /* *Large Screens*  */
+@media (min-width:901px) {
+    body{
+        margin: 20px;
+        font-size: 18px;
+    }  
+}
 
 
 

@@ -1,0 +1,40 @@
+.button-container {
+    display: flex;
+}
+.rounded-button {
+    border-radius: 30px; 
+    padding: 10px 15px;
+    margin-right: 10px; 
+    margin-top: 10px;
+    font-size: 12px;
+}
+.older-post {
+    background-color: white; 
+    color: blue; 
+    border: 1px blue solid;
+}
+.newer-post {
+    background-color: white; 
+    color: grey; 
+    border: 1px grey solid;;
+}
+ /* *Medium Screens* */
+ @media (min-width: 600px)and (max-width:900px) {
+    .rounded-button {
+        border-radius: 30px; 
+        padding: 10px 18px;
+        margin-top: 10px;
+        margin-right: 10px; 
+        font-size: 14px;
+    }
+}
+ /* *Large Screens*  */
+@media (min-width:901px) {
+    .rounded-button {
+        border-radius: 30px; 
+        padding: 10px 18px;
+        margin-right: 10px; 
+        margin-top: 10px;
+        font-size: 18px;
+    }
+}

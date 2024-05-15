@@ -1,0 +1,42 @@
+@import url('colors.css');
+.footer{
+    display: flex;
+    flex-direction: column; 
+    grid-area: ft;
+    margin-right: 2%;
+    margin-left: 3.5%;
+    padding: 15px;
+    background-color: var(--background-color);
+    justify-content: center;
+    align-items: center;
+}
+
+ /* *Medium Screens* */
+ @media (min-width: 600px)and (max-width:900px) {
+    .footer{
+        display: flex;
+        flex-direction: column; 
+        grid-area: ft;
+        margin-right: 3%;
+        margin-left: 2.5%;
+        padding: 15px;
+        background-color: var(--background-color);
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+ /* *Large Screens*  */
+@media (min-width:901px) {
+    .footer{
+        display: flex;
+        flex-direction: column; 
+        grid-area: ft;
+        margin-right: 5%;
+        margin-left: 1%;
+        padding: 15px;
+        background-color: var(--background-color);
+        justify-content: center;
+        align-items: center;
+    }
+}

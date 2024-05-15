@@ -1,9 +1,10 @@
 @import url('colors.css');
-@import url('main-content-index.css');
-@import url('header-content-index.css');
-@import url('footer-content-index.css');
+@import url('sub-index-css/main-content-index.css');
+@import url('common-css/header-content-index.css');
+@import url('common-css/footer-content-index.css');
 body{
-    margin: 20px;
+    margin: 1px;
+    font-size: 14px;
 }
 a{
     color: var(--primary-color);
@@ -12,11 +13,45 @@ a{
     display: grid;
     height: 100%;
     grid-template-rows: auto 1fr auto;
-    grid-template-columns: auto 1fr auto;
     grid-template-areas:
-    "side hd hd"
-    "side main main"
-    "side ft ft";
+    "hd hd hd"
+    "main main main"
+    "ft ft ft";
 }
 
+ /* *Medium Screens* */
+@media (min-width: 600px)and (max-width:900px) {
+    body{
+        margin: 20px;
+        font-size: 16px;
+    }
+    .container{
+        display: grid;
+        height: 100%;
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas:
+        "side hd hd"
+        "side main main"
+        "side ft ft";
+    }
+}
+
+ /* *Large Screens*  */
+@media (min-width:901px) {
+    body{
+        margin: 20px;
+        font-size: 18px;
+    }
+    .container{
+        display: grid;
+        height: 100%;
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas:
+        "side hd hd"
+        "side main main"
+        "side ft ft";
+    }
+}
 
